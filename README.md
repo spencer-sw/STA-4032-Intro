@@ -10,6 +10,6 @@
 
 [Lab 2](https://colab.research.google.com/drive/1CUF2vLHilQffIoB7u7CeJ6-XbgBXIA89?usp=sharing)
 
-Lab 3 (Sections Coming Soon)
+### Lab 3 (Sections Coming Soon)
 
 [Lab 3](https://colab.research.google.com/drive/1imp7xghg9ozLdChloLZPVe-DsIsqI2kx?usp=sharing)
