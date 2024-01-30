@@ -10,10 +10,24 @@
 
 ### Lab 2
 
-[Lab 2](https://colab.research.google.com/drive/1CUF2vLHilQffIoB7u7CeJ6-XbgBXIA89?usp=sharing)
+[Lab 2 (.py)](https://github.com/spencer-sw/STA-4032-Intro/blob/main/spencer_werhan_24_lab_2.py)
 
-[Lab 2.5](https://colab.research.google.com/drive/1DoK6HQMVYVer43deflzUKkajraIrJHqg?usp=sharing)
+[Lab 2 (.ipynb)](https://github.com/spencer-sw/STA-4032-Intro/blob/main/Spencer_Werhan_24_Lab_2.ipynb)
+
+[Lab 2.5 (.py)](https://github.com/spencer-sw/STA-4032-Intro/blob/main/spencer_werhan_24_lab_2_5_.py)
+
+[Lab 2.5 (.ipynb)](https://github.com/spencer-sw/STA-4032-Intro/blob/main/Spencer_Werhan_24_Lab_2_5_.ipynb)
+
+[Normal Distribution HTML Web Page](https://github.com/spencer-sw/STA-4032-Intro/blob/main/NormDist.html)
+
+[Normal Distribution HTML Web Page ChatGPT Exchange](https://chat.openai.com/share/5c0d19cb-f170-40d2-8600-cbb663f4c5a8)
 
 ### Lab 3
 
-[Lab 3](https://colab.research.google.com/drive/1imp7xghg9ozLdChloLZPVe-DsIsqI2kx?usp=sharing)
+[Lab 3]()
+
+### Lab 5
+
+[Lab 5 (.py)]()
+
+[Lab 5 (.ipynb)]()
