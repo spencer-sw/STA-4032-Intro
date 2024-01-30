@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Normal Distribution Visualization</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+            overflow-y: auto;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        canvas {
+            border: 1px solid #ffffff;
+            margin-bottom: 20px;
+        }
+        .controls {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .control-item {
+            margin: 10px 0;
+        }
+        input[type="range"], select {
+            accent-color: #4caf50;
+            width: 200px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .title {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #4caf50;
+        }
+        .hover-text {
+            position: fixed;
+            left: 10px;
+            bottom: 10px;
+            color: red;
+            font-size: 16px;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+        .hover-text:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="title">Normal Distribution Curve</div>
+        <canvas id="normalCurveCanvas" width="600" height="400"></canvas>
+        <div class="controls">
+            <div class="control-item">
+                <label for="meanSlider">Mean (μ):</label>
+                <input type="range" id="meanSlider" min="-20" max="20" step="0.1" value="0">
+            </div>
+            <div class="control-item">
+                <label for="stdDevSlider">Std Dev (σ):</label>
+                <input type="range" id="stdDevSlider" min="0.1" max="50" step="0.1" value="1">
+            </div>
+            <div class="control-item">
+                <label for="zoomSlider">Zoom:</label>
+                <input type="range" id="zoomSlider" min="1" max="400" step="1" value="50">
+            </div>
+            <div class="control-item">
+                <label for="xAxisSlider">X-Axis Position:</label>
+                <input type="range" id="xAxisSlider" min="0" max="800" step="1" value="200">
+            </div>
+            <div class="control-item">
+                <label for="lineStyle">Line Style:</label>
+                <select id="lineStyle">
+                    <option value="solid">Solid</option>
+                    <option value="dashed">Dashed</option>
+                    <option value="dotted">Dotted</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="hover-text">
+        Brought to you by Spencer and ChatGPT
+    </div>
+
+    <script>
+        const canvas = document.getElementById('normalCurveCanvas');
+        const ctx = canvas.getContext('2d');
+        const meanSlider = document.getElementById('meanSlider');
+        const stdDevSlider = document.getElementById('stdDevSlider');
+        const zoomSlider = document.getElementById('zoomSlider');
+        const xAxisSlider = document.getElementById('xAxisSlider');
+        const lineStyleSelect = document.getElementById('lineStyle');
+
+        function drawNormalCurve(mean, stdDev, zoom, xAxisPos, lineStyle) {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.strokeStyle = '#ffffff';
+            ctx.setLineDash([]);
+
+            const offsetX = canvas.width / 2;
+            const offsetY = xAxisPos;
+            const scaleFactorX = 40 / zoom;
+            const scaleFactorY = 200 * zoom;
+
+            // Draw grid
+            ctx.strokeStyle = '#888'; // Grid line color
+            ctx.font = '12px Arial';
+            ctx.fillStyle = 'silver'; // Grid label color
+            for (let i = -canvas.width / 2; i <= canvas.width / 2; i += 50) {
+                ctx.beginPath();
+                ctx.moveTo(i + offsetX, 0);
+                ctx.lineTo(i + offsetX, canvas.height);
+                ctx.stroke();
+
+                if (i !== 0) ctx.fillText((i / scaleFactorX).toFixed(1), i + offsetX, offsetY + 20);
+            }
+            for (let j = 0; j <= canvas.height; j += 50) {
+                ctx.beginPath();
+                ctx.moveTo(0, j);
+                ctx.lineTo(canvas.width, j);
+                ctx.stroke();
+            }
+
+            ctx.strokeStyle = '#ffffff'; // Curve color
+
+            ctx.beginPath();
+            for (let i = -canvas.width / 2; i < canvas.width / 2; i += 0.1) {
+                let x = i / scaleFactorX;
+                let y = (1 / (stdDev * Math.sqrt(2 * Math.PI))) * Math.exp(-0.5 * Math.pow((x - mean) / stdDev, 2));
+                ctx.lineTo(i + offsetX, offsetY - y * scaleFactorY);
+            }
+            ctx.stroke();
+
+            // Set line style based on selection
+            switch (lineStyle) {
+                case 'dashed':
+                    ctx.setLineDash([10, 5]);
+                    break;
+                case 'dotted':
+                    ctx.setLineDash([2, 3]);
+                    break;
+            }
+
+            // Draw X and Y axis labels
+            ctx.fillStyle = 'silver'; // Axis label color
+            ctx.font = '16px Arial';
+            ctx.fillText('X', canvas.width - 30, offsetY + 20);
+            ctx.fillText('Y', offsetX - 20, 20);
+        }
+
+        function updateCurve() {
+            drawNormalCurve(
+                parseFloat(meanSlider.value),
+                parseFloat(stdDevSlider.value),
+                parseFloat(zoomSlider.value),
+                parseFloat(xAxisSlider.value),
+                lineStyleSelect.value
+            );
+        }
+
+        meanSlider.addEventListener('input', updateCurve);
+        stdDevSlider.addEventListener('input', updateCurve);
+        zoomSlider.addEventListener('input', updateCurve);
+        xAxisSlider.addEventListener('input', updateCurve);
+        lineStyleSelect.addEventListener('change', updateCurve);
+
+        updateCurve();
+    </script>
+</body>
+</html>
