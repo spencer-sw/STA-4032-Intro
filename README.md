@@ -4,7 +4,8 @@
 
 ### Lab 1
 
-[Lab 1](https://colab.research.google.com/drive/1rwsTCxkp0nTfD3P3BKr3KqBBn_5Icwtv?usp=sharing)
+[Lab 1 (.py)](https://github.com/spencer-sw/STA-4032-Intro/blob/main/spencer_werhan_math_24_lab_1.py)
+[Lab 1 (.ipynb)](https://github.com/spencer-sw/STA-4032-Intro/blob/main/Spencer_Werhan_Math_24_Lab_1.ipynb)
 
 ### Lab 2
 
