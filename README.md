@@ -24,10 +24,12 @@
 
 ### Lab 3
 
-[Lab 3]()
+[Lab 3(.py)]()
+
+[Lab 3(.ipynb)]()
 
 ### Lab 5
 
-[Lab 5 (.py)]()
+[Lab 5 (.py)](https://github.com/spencer-sw/STA-4032-Intro/blob/main/spencer_werhan_24_lab_5.py)
 
-[Lab 5 (.ipynb)]()
+[Lab 5 (.ipynb)](https://github.com/spencer-sw/STA-4032-Intro/blob/main/Spencer_Werhan_24_Lab_5.ipynb)
