@@ -24,9 +24,15 @@
 
 ### Lab 3
 
-[Lab 3(.py)]()
+[Lab 3(.py)](https://github.com/spencer-sw/STA-4032-Intro/blob/main/spencer_werhan_math_24_lab_3v2.py)
 
-[Lab 3(.ipynb)]()
+[Lab 3(.ipynb)](https://github.com/spencer-sw/STA-4032-Intro/blob/main/Spencer_Werhan_Math_24_Lab_3V2.ipynb)
+
+### Lab 4
+
+[Lab 4(.py)](https://github.com/spencer-sw/STA-4032-Intro/blob/main/spencer_werhan_24_lab_4.py)
+
+[Lab 4(.ipynb)](https://github.com/spencer-sw/STA-4032-Intro/blob/main/Spencer_Werhan_24_Lab_4.ipynb)
 
 ### Lab 5
 
