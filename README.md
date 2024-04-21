@@ -39,3 +39,38 @@
 [Lab 5 (.py)](https://github.com/spencer-sw/STA-4032-Intro/blob/main/spencer_werhan_24_lab_5.py)
 
 [Lab 5 (.ipynb)](https://github.com/spencer-sw/STA-4032-Intro/blob/main/Spencer_Werhan_24_Lab_5.ipynb)
+
+### Lab 6
+
+[Lab 6 (.py)](https://github.com/spencer-sw/STA-4032-Intro/blob/main/spencer_werhan_math_24_lab_6.py)
+
+[Lab 6 (.ipynb)](https://github.com/spencer-sw/STA-4032-Intro/blob/main/Spencer_Werhan_Math_24_Lab_6.ipynb)
+
+### Lab 7
+
+[Lab 7 (.py)](https://github.com/spencer-sw/STA-4032-Intro/blob/main/spencer_werhan_math_24_lab_7_lab_convolution_and_pde.py)
+
+[Lab 7 (.ipynb) File too large to upload,only .py uploaded]()
+
+### Lab 8
+
+[Lab 8 (.py)](https://github.com/spencer-sw/STA-4032-Intro/blob/main/spencer_werhan_alexnet_load_slides_all_hahn_lab_8.py)
+
+[Lab 8 (.ipynb)](https://github.com/spencer-sw/STA-4032-Intro/blob/main/Spencer_Werhan_Alexnet_Load_Slides_All_Hahn_Lab_8.ipynb)
+
+### Lab 9
+
+[Lab 9 (.py)](https://github.com/spencer-sw/STA-4032-Intro/blob/main/spencer_werhan_load_mnist_lab_9.py)
+
+[Lab 9 (.ipynb)](https://github.com/spencer-sw/STA-4032-Intro/blob/main/Spencer_Werhan_Load_MNIST_Lab_9.ipynb)
+
+### Lab 10
+
+[Lab 10 (.py)](https://github.com/spencer-sw/STA-4032-Intro/blob/main/spencer_werhan_math_24_linear_auto_gen_lab_10.py)
+
+[Lab 10 (.ipynb)](https://github.com/spencer-sw/STA-4032-Intro/blob/main/Spencer_Werhan_Math_24_Linear_Auto_Gen_Lab_10.ipynb)
+
+## Final Project
+
+[Final Project]()
+
