@@ -96,6 +96,6 @@
 
 [Final Project](https://colab.research.google.com/drive/1McaIMYT9oL5IHpGoYbPkwcs5DmR1dn17?usp=sharing)
 
-[Final Project (.py)]()
+[Final Project (.py)](https://github.com/spencer-sw/STA-4032-Intro/blob/main/spencer_werhan_final_project_notebook_hahn_stats_24.py)
 
-[Final Project (.ipynb)]()
+[Final Project (.ipynb)](https://github.com/spencer-sw/STA-4032-Intro/blob/main/Spencer_Werhan_Final_Project_Notebook_Hahn_Stats_24.ipynb)
